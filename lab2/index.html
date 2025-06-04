@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza House</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .price-old {
+      text-decoration: line-through;
+      color: #999;
+    }
+    .price-sale {
+      color: orange;
+      font-weight: bold;
+    }
+    .badge-new {
+      background-color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="bg-light text-danger fw-bold ps-3 pt-2">FPT UNIVERSITY</div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Pizza House</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" />
+          <button class="btn btn-outline-light" type="submit">🔍</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="container-fluid p-0 position-relative">
+    <img src="pizza1.jpg" class="w-100" height="400" style="object-fit: cover;" />
+    <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+      <h2>Neapolitan Pizza</h2>
+      <p>If you are looking for traditional Italian pizza, the Neapolitan is the best option!</p>
+    </div>
+  </div>
+
+  <!-- Our Menu -->
+  <div class="container my-5">
+    <h3 class="text-center mb-4">Our Menu</h3>
+    <div class="row g-4">
+
+      <!-- Margherita Pizza -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="menu1.jpg" class="card-img-top" alt="Margherita" />
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">SALE</span>
+            <h5 class="card-title">Margherita Pizza</h5>
+            <p><span class="price-old">$40.00</span> <span class="price-sale">$24.00</span></p>
+            <button class="btn btn-dark w-100">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mushroom Pizza -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="menu2.jpg" class="card-img-top" alt="Mushroom" />
+          <div class="card-body">
+            <h5 class="card-title">Mushroom Pizza</h5>
+            <p>$25.00</p>
+            <button class="btn btn-dark w-100">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hawaiian Pizza -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="menu3.jpg" class="card-img-top" alt="Hawaiian" />
+          <div class="card-body">
+            <span class="badge badge-new text-white mb-2">NEW</span>
+            <h5 class="card-title">Hawaiian Pizza</h5>
+            <p>$30.00</p>
+            <button class="btn btn-dark w-100">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pesto Pizza -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="menu4.jpg" class="card-img-top" alt="Pesto" />
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">SALE</span>
+            <h5 class="card-title">Pesto Pizza</h5>
+            <p><span class="price-old">$40.00</span> <span class="price-sale">$30.00</span></p>
+            <button class="btn btn-dark w-100">Buy</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Book Table -->
+  <div class="bg-dark text-white py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Book Your Table</h3>
+      <form>
+        <div class="row g-3 mb-3">
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Your Name *" required>
+          </div>
+          <div class="col-md-4">
+            <input type="email" class="form-control" placeholder="Your Email *" required>
+          </div>
+          <div class="col-md-4">
+            <select class="form-select">
+              <option>Select a Service</option>
+              <option>Dine-In</option>
+              <option>Takeaway</option>
+              <option>Delivery</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Please write your comment"></textarea>
+        </div>
+        <button class="btn btn-warning">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
